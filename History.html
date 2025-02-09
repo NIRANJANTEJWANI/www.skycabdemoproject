@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(26, 26, 113);
+        }
+
+        .logo img {
+            width: 90px;
+            height: 70px;
+        }
+
+        .logo p {
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgb(74, 104, 188);
+            width: 100vw;
+            border: 2px solid black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100vw;
+
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .menu ul li {
+            list-style: none;
+            display: flex;
+            align-items: flex-end;
+            cursor: pointer;
+            padding: 10px;
+
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .jarvis {
+            background-color: whitesmoke;
+            margin: 0px 0px;
+            padding: 0px;
+            text-align: center;
+            overflow: hidden;
+            width: 200%;
+            max-width: 1500px;
+            border-radius: 15px;
+        }
+
+        .jarvis1 {
+            background-color: rgb(91, 98, 235);
+            margin: 20px 0px;
+            height: auto;
+            width: 100%;
+            display: inline-block;
+            max-width: 95%;
+            overflow: auto;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            text-decoration: underline;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: rgb(72, 91, 177);
+            padding: 10px;
+            margin: 10px;
+            color: white;
+        }
+
+        .containeer {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: rgb(72, 91, 177);
+            padding: 10px;
+            margin: 10px;
+            color: white;
+        }
+
+        .jarvis2 {
+            background-color: rgb(121, 126, 212);
+            margin: 20px 0px;
+            height: 500px;
+            width: 100%;
+            display: inline-block;
+            max-width: 95%;
+            overflow: hidden;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .jarvis2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 10px 10px;
+            background-color: rgb(59, 22, 173);
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .jarvis3 {
+            background-color: rgb(91, 98, 235);
+            margin: 20px 0px;
+            height: auto;
+            width: 100%;
+            display: inline-block;
+            max-width: 95%;
+            overflow: auto;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+
+        .contain {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: rgb(72, 91, 177);
+            padding: 10px;
+            margin: 10px;
+            color: white;
+        }
+
+        .abc {
+            text-decoration: underline;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px 10px;
+        }
+/*
+        .contact {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: rgb(72, 91, 177);
+            padding: 10px;
+            margin: 10px;
+            color: white;
+        }
+
+        .contact li{
+            background-color: wheat;
+            height: auto;
+            width: 20%;
+            display: inline-block;
+            justify-content: auto;
+            align-items: center;
+            max-width: 40%;
+            overflow: auto;
+            padding: 5px;
+            font-size: 20px;
+            color: black;
+            border: 4px solid black;
+            border-radius: 30px;
+            text-align: auto;
+            margin: 10px 10px;
+        }*/
+
+        footer {
+            position: sticky;
+            bottom: 0px;
+            background-color: rgb(74, 104, 188);
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        footer p {
+            font-size: 10px;
+            color: white;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /*MEDIA QUERY*/
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer p {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .jarvis1,
+            .jarvis2 .jarvis3 {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="http://skycabs.in/images/logo.png" alt="logo">
+                <p>By Askshit Tours & Travels.</p>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <!--put traget = blank if required.-->
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="History.html">History</a></li>
+                    <!--
+                    <li><a href="About-Us.html">About Us</a></li>-->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="jarvis">
+            <div class="jarvis1">
+                <div class="container">Our History.</div>
+                <div class="containeer">Established in spring 2012 by Kshitij Shankar Avhad, at the time already a
+                    well-known figure in the tourism scenario of our city(Nashik), Best Travelling service, with
+                    registered office in Nashik Best Tour had made a name for itself as a brand signifying quality and
+                    reliability, a benchmark for people wishing to travel in full freedom and at the same time be able
+                    to rely on constant & discreet asistance. Sky Cabs, operating under the name Best Tours, was
+                    established in the spring of
+                    2013 by Kshitij Thankor Avhod in Nashik.. The company has worked with
+                    companies such as Jyoti Structures Ltd. (since 2015), Sharda Motors Ltd. (since 2017), Samsonite
+                    South Asia Pvt. Ltd. (since 2017), and government offices like Maharashtra Jeevan Pradhikaran Water
+                    & Energy Audit Division, Nashik (since 2016) [the text on the image]. Sky Cabs aims to service the
+                    travel needs of companies and individuals throughout Maharashtra and become a leading travel agency
+                    for corporate and leisure travelers</div>
+            </div>
+            <div class="jarvis2">
+                <img src="WhatsApp Image 2025-02-09 at 13.03.15.jpeg">
+            </div>
+
+            <div class="jarvis3">
+                <div class="contain">
+                    <p class="abc">Why Us.</p>
+                    <p>* We are the best travel agency in the world</p>
+                    <p>* Our services are the best in the world</p>
+                    <p>* We have the best travel deals</p>
+                    <p>* We have the best travel packages</p>
+                    <p>* We have the best pricing offers</p>
+                </div>
+<!--
+                <div class="contact">
+                    <nav>
+                        <Ul>
+                            <li>Name - Mr Niranjan Deepak Tejwani.</li>
+                            <li>Email.id - niranjantejwani05@gmail.com</li>
+                            <li>Phone - +91 92840 97262.</li>
+                            <li>Address - Dwarka, Nashk - 422011.</li>
+                        </Ul>
+                    </nav>
+                </div>-->
+            </div>
+    </main>
+
+    <footer>
+        <P>© 2025 Skycabs.</P>
+        <P>Name - Mr. Niranjan D Tejwani.</P>
+        <p>Contact Us: +91 92840 97262.</p>
+    </footer>
+</body>
+
+</html>

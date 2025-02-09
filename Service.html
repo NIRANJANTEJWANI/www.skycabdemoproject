@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(3, 27, 92)
+        }
+
+        .logo img {
+            width: 90px;
+            height: 70px;
+        }
+
+        .logo p {
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color:rgb(131, 173, 246);
+            width: 100vw;
+            border: 2px solid black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100vw;
+
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .menu ul li {
+            list-style: none;
+            display: flex;
+            align-items: flex-end;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .jarvis {
+            background-color: whitesmoke;
+            margin: 20px 0px;
+            padding: 50px 50px;
+            overflow: hidden;
+            width: 200%;
+            max-width: 1500px;
+            border-radius: 2%;
+        }
+
+        .jarvis1 {
+            background-color: rgb(121, 126, 212);
+            margin: 10px 30px;
+            height: 500px;
+            width: 100%;
+            display: inline-block;
+            max-width: 95%;
+            overflow: hidden;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 10px 10px;
+            background-color: rgb(59, 22, 173);
+            border: 2px solid black;
+            border-radius: 5px;
+
+        }
+
+        .jarvis2 {
+            background-color: rgb(121, 126, 212);
+            margin: 10px 30px;
+            height: 402px;
+            width: 100%;
+            display: inline-block;
+            max-width: 95%;
+            overflow: auto;
+            padding: 10px 10px;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            text-decoration: underline;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: azure
+        }
+
+        .jarvis2 ul {
+            list-style: symbols(Round-the-clock);
+            padding: 0px 20px;
+        }
+
+        footer {
+            position: sticky;
+            bottom: 0px;
+            background-color: rgb(219, 224, 238);
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        footer p {
+            font-size: 10px;
+            color: rgb(12, 40, 195);
+            justify-content: center;
+            text-align: center;
+        }
+
+        /*MEDIA QUERY*/
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer p {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .jarvis1,
+            .jarvis2 {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="http://skycabs.in/images/logo.png" alt="logo">
+                <p>By Askshit Tours & Travels.</p>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <!--put traget = blank if required.-->
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="History.html">History</a></li>
+                    <!--
+                    <li><a href="About-Us.html">About Us</a></li>-->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="jarvis">
+            <div class="jarvis1">
+                <img class="img1"
+                    src="multiple-cars-parked-inside-large-multi-level-parking-basel-switzerland-nov-airport-150353819.webp"
+                    alt="car">
+            </div>
+            <div class="jarvis2">
+                <h1 class="container">SERVICES.</h1>
+                <BR>
+                <div>
+                    <ul>
+                        <li>Airport Transfers: Reliable and timely airport pick-up and drop-off services.</li>
+                        <li>Event Transportation: Transportation services for special events</li>
+                        <li>Corporate Travel: Tailored travel solutions for businesses.</li>
+                        <li>Outstation Trips: Customized travel packages for outstation trips.</li>
+                        <li>Intercity Travel: Comfortable travel between cities.</li>
+                        <li>Travel: Efficient transportation within the city.</li>
+                        <li>Event Transportation: Transportation services for special events.</li>
+                        <li>Packages: Curated tour packages for popular tourist destinations.</li>
+                        <li>Luxury Car Rentals: Premium car rental services for special occasions.</li>
+                        <li>24/7 Customer Support: Round-the-clock customer support.</li>
+                        <li>Airport Transfers: Reliable and timely airport pick-up and drop-off services.</li>
+                        <li>Event Transportation: Transportation services for special events</li>
+                        <li>Corporate Travel: Tailored travel solutions for businesses.</li>
+                        <li>Outstation Trips: Customized travel packages for outstation trips.</li>
+                        <li>Intercity Travel: Comfortable travel between cities.</li>
+                        <li>Travel: Efficient transportation within the city.</li>
+                        <li>Event Transportation: Transportation services for special events.</li>                        
+                    </ul>
+                </div>
+                </p>
+            </div>
+            <!--<div class="jarvis3">J.3</div>
+            <div class="jarvis4">J.4</div> -->
+        </div>
+    </main>
+
+    <footer>
+        <P>© 2025 Skycabs.</P>
+        <P>Name - Mr. Niranjan D Tejwani.</P>
+        <p>Contact Us: +91 92840 97262.</p> 
+    </footer>
+</body>
+
+</html>
